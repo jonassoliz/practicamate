@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../img/1.gif");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1200px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.titulo {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px;
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background: #2c3e50;
+    color: white;
+    border-radius: 5px;
+    margin: 15px 0;
+    font-size: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.operaciones {
+    background: #b2ec07;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 60%;
+    min-width: 300px;
+}
+
+.operaciones h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+.izquierda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.izquierda div {
+    background: #ecf0f1;
+    padding: 40px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.derecha {
+    flex: 1;
+    background: #bdc3c7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+    background: #34495e;
+    color: white;
+    border-radius: 5px;
+    font-size: 35px;
+    height: 70px;
+    width: 100%;
+}
+
+footer p {
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+        padding: 8px;
+    }
+
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .operaciones {
+        width: 80%;
+        max-width: 400px; 
+        padding: 15px;
+    }
+
+    .operaciones h2 {
+        font-size: 18px; 
+    }
+
+    .izquierda {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .footer {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 25px;
+    }
+
+    .menu {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .operaciones {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .footer {
+        font-size: 16px;
+    }
+}
